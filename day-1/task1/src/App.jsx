@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.css'
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -34,13 +34,31 @@
 
 // export default App
 
-import React from 'react';
-function One(){
+// import React from 'react';
+// function One(){
+//   return (
+//     <div>
+//     <h1>hello</h1>
+//     <p>welcome to my first react application</p>
+//     </div>
+//   );
+// }
+// export default One;
+
+
+
+function App() {
+  const name = "Alex";
+  const role="Developer";
   return (
     <div>
-    <h1>hello</h1>
-    <p>welcome to my first react application</p>
+      <h1 className="hello">Hello,All I'M {name}!</h1>
+      <p className="role">Role:{role}</p>
+      <p className='main'> Welcome to {name}'s first React application.</p>
     </div>
   );
 }
-export default One;
+
+export default App;
+
+
