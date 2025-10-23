@@ -1,0 +1,23 @@
+Task 1:
+List of Objects
+Create a new component called StudentList.jsx.
+Define an array of student objects:
+const students = [
+  { id: 1, name: "John", grade: "A" },
+  { id: 2, name: "Emma", grade: "B" },
+  { id: 3, name: "Liam", grade: "A" },
+  { id: 4, name: "Olivia", grade: "C" },
+];
+Use map() to render a table with columns: ID, Name, and Grade.
+Use the id field as the key prop for each row.
+
+Task 2:
+Create a new React component called FruitsList.jsx.
+Inside the component, define an array of fruits:
+const fruits = ["Apple", "Banana", "Orange", "Mango", "Grapes"];
+Use the map() method to display each fruit inside an unordered list (<ul>).
+Assign a unique key prop to each <li> element using the index or fruit name.
+Render the component in your App.js.
+
+Task 3:
+Modify the previously created static website cards with list rendering concepts

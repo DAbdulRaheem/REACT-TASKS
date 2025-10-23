@@ -12,10 +12,9 @@ function App() {
     <div className="App">
       <Navbar />
       <CategorySection title="Categories" />
-      <BannerCards />
-      <CategorySection title="Shop by Category" />
+      {/* <BannerCards /> */}
       <NewArrivals />
-      <TrendingProducts />
+      {/* <TrendingProducts /> */}
       <Footer />
     </div>
   );

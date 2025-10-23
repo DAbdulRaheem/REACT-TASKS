@@ -1,0 +1,28 @@
+[
+    {
+        "id":"1",
+        "name":"Alex",
+        "Role":"IGL"
+    },
+     {
+        "id":"2",
+        "name":"RC",
+        "Role":"Support"
+    },
+    {
+        "id":"3",
+        "name":"REIGNS",
+        "Role":"Entry_Fragger"
+    },
+    {
+        "id":"4",
+        "name":"SPIKE",
+        "Role":"Assaulter"
+    },
+    {
+        "id":"5",
+        "name":"SAVAGE",
+        "Role":"Assaulter"
+    }
+
+]

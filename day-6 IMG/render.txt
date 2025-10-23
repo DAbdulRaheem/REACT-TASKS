@@ -1,0 +1,13 @@
+Task 1: Create a React app that renders different media files:
+•⁠  ⁠Images
+•⁠  ⁠Videos
+•⁠  ⁠Audio
+•⁠  ⁠JSON data
+
+Use different methods to include these files:
+•⁠  ⁠Import(ES6)
+•⁠  ⁠Using files from the public folder
+
+Task 2: Modify the previously created static website:
+•⁠  ⁠Replace all images with local image files
+•⁠  ⁠Replace icons with local icon files
