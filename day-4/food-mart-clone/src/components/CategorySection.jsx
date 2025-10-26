@@ -18,6 +18,14 @@ const CategorySection = ({ title }) => {
       img: "https://food-mart-template.vercel.app/images/icon-wine-glass-bottle.png",
       name: "Fruits & Veges",
     },
+    {
+      img: "https://food-mart-template.vercel.app/images/icon-animal-products-drumsticks.png",
+      name: "Fruits & Veges",
+    },
+    {
+      img: "https://food-mart-template.vercel.app/images/icon-bread-herb-flour.png",
+      name: "Fruits & Veges",
+    },
   ];
 
   return (

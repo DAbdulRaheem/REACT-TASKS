@@ -2,10 +2,9 @@ import React from "react";
 
 function TrendingProducts() {
   const products = [
-    { name: "Apple", price: "$2.50", img: "/images/apple.jpg" },
-    { name: "Banana", price: "$1.20", img: "/images/banana.jpg" },
-    { name: "Orange", price: "$1.80", img: "/images/orange.jpg" },
-    { name: "Strawberry", price: "$3.50", img: "/images/strawberry.jpg" },
+    { name: "COOKIE", price: "$2.50", img: "cookie.png" },
+    { name: "Banana", price: "$1.20", img: "https://food-mart-template.vercel.app/images/thumb-bananas.png" },
+    { name: "Milk", price: "$1.80", img: "thumb-milk.png" },
   ];
 
   return (

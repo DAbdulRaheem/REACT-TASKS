@@ -9,6 +9,7 @@
 // Use the id field as the key prop for each row.
 
 import React from 'react';
+import './students.css';
 
 function StudentList() {
     const students = [
@@ -24,7 +25,7 @@ function StudentList() {
             <h1>Student List</h1>
 
             <table>
-              <thead>
+              <thead className='Thead'>
                 <tr>
                   <th>ID</th>
                   <th>Name</th>
@@ -34,9 +35,9 @@ function StudentList() {
               <tbody>
                 {students.map((student) => (
                   <tr key={student.id}>
-                    <td>{student.id}</td>
-                    <td>{student.name}</td>
-                    <td>{student.grade}</td>
+                    <td data-label="ID">{student.id}</td>
+                    <td data-label="Name">{student.name}</td>
+                    <td data-label="Grade">{student.grade}</td>
                   </tr>
                 ))}
               </tbody>

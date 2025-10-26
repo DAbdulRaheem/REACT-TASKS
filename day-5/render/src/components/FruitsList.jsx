@@ -8,6 +8,7 @@
 
 
 import React from 'react'
+import './fruits.css'
 
 function FruitsList() {
     const fruits=["Apple", "Banana", "Orange", "Mango", "Grapes"];

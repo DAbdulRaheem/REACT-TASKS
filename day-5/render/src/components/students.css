@@ -1,0 +1,111 @@
+/* Page styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #dce6ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #3b3fa3;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Table styling */
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header */
+thead tr {
+  background-color: #4c51bf;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+thead th {
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+/* Table body */
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f8ff;
+}
+
+tbody tr:hover {
+  background-color: #e6e9ff;
+}
+
+tbody td {
+  padding: 14px 18px;
+  font-size: 1rem;
+}
+
+/* Add a little animation to the table */
+table {
+  transform: scale(0.98);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  table {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody td {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #4c51bf;
+  }
+
+  tbody tr {
+    margin-bottom: 10px;
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+}
