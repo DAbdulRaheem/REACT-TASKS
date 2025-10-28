@@ -1,0 +1,57 @@
+:root{
+    --bg: lightcoral;
+    --accent: #fff;
+    --muted: rgba(0,0,0,0.2);
+    --button-size: 56px;
+}
+
+body{
+    background: linear-gradient(180deg, var(--bg), #f08);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+
+.Work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 6vh 4vw;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.counter{
+    color: var(--accent);
+    text-align: center;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-weight: 600;
+    text-shadow: 0 1px 2px var(--muted);
+}
+
+button{
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.12);
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform .12s ease, background .12s ease;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.18);
+}
+
+button:focus{
+    outline: 3px solid rgba(255,255,255,0.18);
+    outline-offset: 3px;
+}
