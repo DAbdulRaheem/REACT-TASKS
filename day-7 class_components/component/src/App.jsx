@@ -1,6 +1,5 @@
 
 import Count from './components/count';
-import RandomNumberGenerator from './components/random';
 
 function App() {
 

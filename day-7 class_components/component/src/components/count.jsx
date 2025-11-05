@@ -29,6 +29,7 @@ class Count extends Component {
     return (
       <div className='Work'>
         <h2 className='counter'>Count: {this.state.count}</h2>
+        <br />
         <button onClick={this.increment}>Increment</button>
         <button onClick={this.decrement}>Decrement</button>
         <button onClick={this.reset}>Reset</button>

@@ -14,7 +14,7 @@ body{
 
 .Work{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -39,19 +39,9 @@ button{
     border: none;
     background: rgba(255,255,255,0.12);
     color: var(--accent);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: transform .12s ease, background .12s ease;
-}
-
-button:hover{
-    transform: translateY(-3px);
-    background: rgba(255,255,255,0.18);
-}
-
-button:focus{
-    outline: 3px solid rgba(255,255,255,0.18);
-    outline-offset: 3px;
 }

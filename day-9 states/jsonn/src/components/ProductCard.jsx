@@ -1,9 +1,9 @@
 import React from "react";
 
-function ProductCard({ title, price, description, image }) {
+function ProductCard({ title, price, description, image, slug, category }) {
   return (
     <div style={{
-      border: "1px solid #ddd",
+      border: "1px solid ",
       borderRadius: "10px",
       padding: "15px",
       margin: "10px",
@@ -12,6 +12,8 @@ function ProductCard({ title, price, description, image }) {
     }}>
       <img src={image} alt={title} style={{ width: "100px", height: "100px" }} />
       <h3>{title}</h3>
+      <p>{slug}</p>
+      <p>{category}</p>
       <p><strong>Price:</strong> ${price}</p>
       <p>{description}</p>
     </div>
