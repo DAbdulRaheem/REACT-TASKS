@@ -60,7 +60,7 @@ export class TodoList extends Component{
         {this.state.todos === undefined ? this.state.loading 
         : (
           this.state.todos.map((user) => (
-            <div key={user.id}>
+            <div key={user.id}li>
                 <ul>
                     <li>{user.title}</li>
                 </ul>
