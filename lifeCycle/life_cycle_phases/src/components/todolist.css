@@ -1,0 +1,34 @@
+.todo-list-container {
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .todo-item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    background: #f9f9f9;
+  }
+  
+  .todo-item-table th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 12px 8px;
+    font-size: 1.2em;
+  }
+  
+  .todo-item-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 4px;
+    border-radius: 8px;
+  }
+  
