@@ -43,7 +43,7 @@ export function AutoQuote() {
 
   return (
     <div>
-      <h2>{quote}</h2>
+      <h2>"{quote}"</h2>
     </div>
   );
 }

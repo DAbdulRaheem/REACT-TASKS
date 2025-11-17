@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -47,18 +47,43 @@ import './App.css'
 
 
 
-function App() {
-  const name = "Alex";
-  const role="Developer";
-  return (
-    <div>
-      <h1 className="hello">Hello,All I'M {name}!</h1>
-      <p className="role">Role:{role}</p>
-      <p className='main'> Welcome to {name}'s first React application.</p>
-    </div>
-  );
+// function App() {
+//   const name = "Alex";
+//   const role="Developer";
+//   return (
+//     <div>
+//       <h1 className="hello">Hello,All I'M {name}!</h1>
+//       <p className="role">Role:{role}</p>
+//       <p className='main'> Welcome to {name}'s first React application.</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+import React, { Component } from 'react';
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      text: "AbdulRaheem"
+    };
+  }
+
+  theChange = () => {
+    this.setState({ text: "TAxALEX" });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.text}</h1>
+        <button onClick={this.theChange}> {this.state.text === "AbdulRaheem" ? "Change to Game" : "Change to Name"}</button>
+      </div>
+    );
+  }
 }
 
 export default App;
-
-
