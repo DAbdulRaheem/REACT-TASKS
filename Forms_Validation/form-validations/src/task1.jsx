@@ -82,7 +82,7 @@ export default function LoginForm() {
     <form onSubmit={handleSubmit}>
         <div>
             <label>Email: </label>
-            <input type='text' value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <input type='text' value={email} onChange={(e)=>setEmail(e.target.value)} autoFocus/>
             <p>{email}</p>
             <label>Password: </label>
             <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)} />

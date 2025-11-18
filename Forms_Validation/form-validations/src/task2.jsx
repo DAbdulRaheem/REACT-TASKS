@@ -51,8 +51,8 @@ export default function RegisterForm() {
         newErrors.fullName='Name is required';
     }
     const ageNum=Number(age);
-    if(!age || isNaN(ageNum) || ageNum<18){
-        newErrors.age='Age must be 18 or above';
+    if(!age || isNaN(ageNum) || ageNum<18 || ageNum>100){
+        newErrors.age='Age must be 18 - 100';
     }
     if(!gender){
         newErrors.gender='Please select a gender';
@@ -78,6 +78,7 @@ export default function RegisterForm() {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
           />
+          <p style={{color:'green'}}>{fullName}</p>
         </label>
         {errors.fullName && <p>❌ {errors.fullName}</p>}
       </div>
